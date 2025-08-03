@@ -1,0 +1,23 @@
+[user]
+	name = John Lynn
+	email = lynnjonathanp@gmail.com
+[help]
+	autocorrect = 5
+[alias]
+	dad = !curl -w \"\\n\" https://icanhazdadjoke.com/ && git add
+[diff]
+	tool = nvimdiff
+[difftool "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[core]
+	editor = nvim
+[merge]
+	tool = nvimdiff
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[difftool "nvimdiff"]
+	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+[mergetool "nvimdiff"]
+	cmd = nvim -d \"$LOCAL\" \"$REMOTE\" \"$MERGED\" -c \"wincmd w\" -c \"wincmd J\"
