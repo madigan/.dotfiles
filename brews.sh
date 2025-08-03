@@ -2,7 +2,7 @@
 brew install stow
 brew install git
 brew install gh
-brew install zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
+brew install zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting starship
 brew install fzf bat
 brew install ripgrep fd
 brew install tmux neovim
