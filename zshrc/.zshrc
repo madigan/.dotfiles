@@ -19,3 +19,4 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi"
 
 export PATH="/Users/john/.bun/bin:$PATH"
+alias code=codium
