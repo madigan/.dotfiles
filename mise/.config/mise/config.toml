@@ -1,0 +1,6 @@
+[tools]
+bun = "1.2.15"
+node = "24.2.0"
+python = "latest"
+ruby = "latest"
+rust = "latest"
