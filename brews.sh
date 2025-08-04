@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install stow
 brew install git
 brew install gh
@@ -12,3 +13,4 @@ brew install colima docker docker-completion
 brew install flyctl
 brew install --cask ghostty
 brew install --cask font-hack-nerd-font
+brew install --cask vscodium
