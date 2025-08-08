@@ -3,6 +3,7 @@
 brew install stow
 brew install git
 brew install gh
+brew install lazygit
 brew install zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting starship
 brew install fzf bat
 brew install ripgrep fd
