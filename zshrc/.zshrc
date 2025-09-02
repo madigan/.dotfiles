@@ -21,3 +21,5 @@ export FZF_DEFAULT_OPTS="--ansi"
 export PATH="/Users/john/.bun/bin:$PATH"
 alias lg=lazygit
 alias code=codium
+alias mid='date +%Y%m%d%H%M'
+. "$HOME/.local/bin/env"
