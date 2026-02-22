@@ -19,7 +19,42 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi"
 
 export PATH="/Users/john/.bun/bin:$PATH"
+export PATH="$PATH:/Users/john/Applications/Visual\ Studio \ Code.app/Contents/Resources/app/bin"
 alias lg=lazygit
-alias code=codium
+alias nuke='rm -rf'
 alias mid='date +%Y%m%d%H%M'
+alias routes="bin/rails routes | fzf -e"
 . "$HOME/.local/bin/env"
+
+# pnpm
+export PNPM_HOME="/Users/john/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# bit
+case ":$PATH:" in
+  *":/Users/john/bin:"*) ;;
+  *) export PATH="$PATH:/Users/john/bin" ;;
+esac
+# bit end
+
+# Added by Antigravity
+export PATH="/Users/john/.antigravity/antigravity/bin:$PATH"
+
+# Android Development
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Find Files Fast
+ff() {
+  rg "$1" --files-with-matches \
+  | fzf --preview "rg \"$1\" -n -C 2 {}"
+}
+
+# GPG
+export GPG_TTY=$(tty)
+
